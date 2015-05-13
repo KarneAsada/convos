@@ -2,8 +2,8 @@
 
 This is a small API that can be used to read and send short, threaded messages
 between users. It's built using SQLite, the micro-framework Slim
-(http://www.slimframework.com/) for routing and a JWT library from firebase
-(https://github.com/firebase/php-jwt).
+(http://www.slimframework.com/) for routing and a JSON Web Token library
+called php-jwt (https://github.com/firebase/php-jwt).
 
 ## Running it
 Download the code and run: ```php -S localhost:5000``` to run the server on
