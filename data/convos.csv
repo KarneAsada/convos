@@ -1,0 +1,6 @@
+"convo_id","parent_id","sender_id","recipient_id","subject","body","tstamp","hasBeenRead"
+1,0,1,2,"First","First Convo",1431533220,1
+2,1,2,1,,"A reply",1431533420,0
+3,0,2,1,"I like your socks!","Those are some sweet socks, bro",1431533920,1
+4,3,2,1,,"Thanks, bro. I sewed them myself with organic cotton.",1431534920,0
+5,0,2,3,"Hi Jan","How's it going?",1431533990,0
