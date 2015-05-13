@@ -109,7 +109,7 @@ class Convos {
    */
   public function create( $inputs ) {
 
-    if ( ! $inputs['parent_id']) {
+    if ($inputs['parent_id']) {
       $inputs['subject'] = null;
     }
 
@@ -207,6 +207,17 @@ class Convos {
   }
 
   /**
+   * Checks whether the supplied parent id is valid
+   * @param int $parentId
+   * @return boolean
+   */
+  public function checkConvoId( $id ) {
+    $sth = $this->db->prepare('SELECT * FROM convos WHERE convo_id = :id');
+    $sth->execute([':id' => $id]);
+    return !!count($sth->fetchAll());
+  }
+
+  /**
    * Private functions
    */
 
@@ -229,7 +240,7 @@ class Convos {
   /**
    * Imports data from a CSV file
    * @param string $csvFile
-   * @param string $table   
+   * @param string $table
    */
   private function _importCSV( $csvFile, $table ) {
 

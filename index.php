@@ -56,11 +56,12 @@ $app->post('/api/convo(/:id)', 'auth', function($id = 0) use ($convos, $app) {
     $errors[] = 'Missing recipient variable';
   }
 
-  if ( ! $convos->checkUserId($inputs['recipient']) ) {
+  if ($inputs['recipient'] && !$convos->checkUserId($inputs['recipient'])) {
     $errors[] = 'Specified recipient does not exist';
   }
 
-  if (($inputs['subject'] = $app->request->params('subject')) === null) {
+  if (($inputs['subject'] = $app->request->params('subject')) === null
+      && $id === 0) {
     $errors[] = 'Missing subject variable';
   }
 
@@ -75,6 +76,10 @@ $app->post('/api/convo(/:id)', 'auth', function($id = 0) use ($convos, $app) {
 
   if (strlen($inputs['body']) > 64000) {
     $errors[] = 'Body length is limited to 64k characters';
+  }
+
+  if ($id && !$convos->checkConvoId($id)) {
+    $errors[] = 'Specified convos thread does not exist';
   }
 
   // Add parent id in the case of a reply to a parent thread
