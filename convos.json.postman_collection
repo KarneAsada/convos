@@ -1,0 +1,186 @@
+{
+	"id": "b0039325-8852-27b7-4023-2bf77fc75d9a",
+	"name": "Convos",
+	"description": "A sample of API requests for the convos API",
+	"order": [
+		"896f6e9b-0e69-058c-ae1f-4cd844b7a5c6",
+		"1bf246a0-2070-a38e-23f0-3e1f35356bdd",
+		"2e74e458-3a97-b5b4-5b76-c2b127371932",
+		"dd37214a-c6a8-5558-f277-d09c8dbc882c",
+		"05b8d538-efa2-7e44-1b25-eaa36b81b7fb"
+	],
+	"folders": [],
+	"timestamp": 1431559901163,
+	"synced": false,
+	"owner": 0,
+	"sharedWithTeam": false,
+	"subscribed": false,
+	"remoteLink": "",
+	"public": false,
+	"write": true,
+	"requests": [
+		{
+			"id": "05b8d538-efa2-7e44-1b25-eaa36b81b7fb",
+			"headers": "Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIqIiwiYXVkIjoiKiIsImlhdCI6MTQzMTU1MDAxOSwiZXhwIjoxNDMxNTUzNjE5LCJ1c2VySWQiOiIxIn0.Az0gV_v_ya5fu-Uwzaeps2o3G-lTx2iQsji63krhRMI\n",
+			"url": "http://localhost:5000/api/convo/6",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "b0039325-8852-27b7-4023-2bf77fc75d9a",
+			"data": [
+				{
+					"key": "recipient",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "body",
+					"value": "I'm good. You",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "POST /api/convo/:id",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1431560733210,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionOwner": 0,
+			"synced": false
+		},
+		{
+			"id": "1bf246a0-2070-a38e-23f0-3e1f35356bdd",
+			"headers": "Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIqIiwiYXVkIjoiKiIsImlhdCI6MTQzMTU1MDAxOSwiZXhwIjoxNDMxNTUzNjE5LCJ1c2VySWQiOiIxIn0.Az0gV_v_ya5fu-Uwzaeps2o3G-lTx2iQsji63krhRMI\n",
+			"url": "http://localhost:5000/api/convos",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "b0039325-8852-27b7-4023-2bf77fc75d9a",
+			"data": [
+				{
+					"key": "user",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "GET /api/convos",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1431560058131,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionOwner": 0,
+			"synced": false
+		},
+		{
+			"id": "2e74e458-3a97-b5b4-5b76-c2b127371932",
+			"headers": "Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIqIiwiYXVkIjoiKiIsImlhdCI6MTQzMTU1MDAxOSwiZXhwIjoxNDMxNTUzNjE5LCJ1c2VySWQiOiIxIn0.Az0gV_v_ya5fu-Uwzaeps2o3G-lTx2iQsji63krhRMI\n",
+			"url": "http://localhost:5000/api/convo/3",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "b0039325-8852-27b7-4023-2bf77fc75d9a",
+			"data": [
+				{
+					"key": "user",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "GET /api/convo/:id",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1431560085146,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionOwner": 0,
+			"synced": false
+		},
+		{
+			"id": "896f6e9b-0e69-058c-ae1f-4cd844b7a5c6",
+			"headers": "Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIqIiwiYXVkIjoiKiIsImlhdCI6MTQzMTU1MDAxOSwiZXhwIjoxNDMxNTUzNjE5LCJ1c2VySWQiOiIxIn0.Az0gV_v_ya5fu-Uwzaeps2o3G-lTx2iQsji63krhRMI\n",
+			"url": "http://localhost:5000/api/token",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "b0039325-8852-27b7-4023-2bf77fc75d9a",
+			"data": [
+				{
+					"key": "user",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "POST /api/token",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1431560022726,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionOwner": 0,
+			"synced": false
+		},
+		{
+			"id": "dd37214a-c6a8-5558-f277-d09c8dbc882c",
+			"headers": "Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIqIiwiYXVkIjoiKiIsImlhdCI6MTQzMTU1MDAxOSwiZXhwIjoxNDMxNTUzNjE5LCJ1c2VySWQiOiIxIn0.Az0gV_v_ya5fu-Uwzaeps2o3G-lTx2iQsji63krhRMI\n",
+			"url": "http://localhost:5000/api/convo",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "b0039325-8852-27b7-4023-2bf77fc75d9a",
+			"data": [
+				{
+					"key": "recipient",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subject",
+					"value": "Hi",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "body",
+					"value": "What's up?",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "POST /api/convo",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1431560243954,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionOwner": 0,
+			"synced": false
+		}
+	]
+}

@@ -170,3 +170,6 @@ Errors receive a 400 response with JSON object containing the following fields:
 Due to the threaded nature of Convos, I intentionally left out the UPDATE and
 DELETE endpoints of the API. Neither seemed appropriate, since the convos are
 messages like email and once they are sent, they should be permanent.
+
+* I also included a Postman collection for easy testing
+```convos.json.postman_collection```
