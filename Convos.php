@@ -13,7 +13,7 @@ class Convos {
    * A constructor that connects to the db
    */
   public function __construct() {
-    if ($db === null) {
+    if ($this->db === null) {
       $this->_connect();
     }
   }
