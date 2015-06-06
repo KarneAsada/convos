@@ -170,6 +170,7 @@ $app->run();
  */
 function auth() {
   try {
+    global $jwtKey;
     $app = \Slim\Slim::getInstance();
     $token = $app->request->headers->get('Authorization');
     $decoded = JWT::decode($token, $jwtKey, array('HS256'));
