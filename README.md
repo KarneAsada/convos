@@ -53,7 +53,7 @@ Then each request to the API must be accompanied by an ```Authorization```
 header with the provided JWT, like so:
 
 ```
-curl -X GET -H "Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIqIiwiYXVkIjoiKiIsImlhdCI6MTQzMTU1NzM0NiwiZXhwIjoxNDMzNjMwOTQ2LCJ1c2VySWQiOiIxIn0.83CZGBAS_MZarWQImlIO1aay9QQmY5N4s7ErnMQ8Lnw" http://localhost:5000/api/convos
+curl -X GET -H "Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIqIiwiYXVkIjoiKiIsImlhdCI6MTQzMzYzMTgzMSwiZXhwIjoxNDM2MjIzODMxLCJ1c2VySWQiOiIxIn0.yubF3dUfYGeqI9HmuyeG-sq-it0zVXHiH-ThThJvxgU" http://localhost:5000/api/convos
 ```
 
 Failures to authorize result in a 401 error.
